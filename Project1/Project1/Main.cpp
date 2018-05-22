@@ -27,7 +27,7 @@ int main(int argc, char **argv){
       return 0;
    }
 
-   image = al_load_bitmap("archivo de imagen.png");
+   image = al_load_bitmap("image.jpg");
 
    if(!image) {
       al_show_native_message_box(display, "Error", "Error", "Failed to load image!", 
