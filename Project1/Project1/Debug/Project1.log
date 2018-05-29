@@ -1,12 +1,5 @@
-﻿  Main.cpp
-Main.obj : error LNK2019: símbolo externo __imp__al_rest sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_destroy_bitmap sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_draw_bitmap sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_load_bitmap sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_create_display sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_destroy_display sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_flip_display sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_install_system sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_init_image_addon sin resolver al que se hace referencia en la función _main
-Main.obj : error LNK2019: símbolo externo __imp__al_show_native_message_box sin resolver al que se hace referencia en la función _main
-C:\Users\Administrador\Desktop\Repo\PracticaGITgraficos1\Project1\Debug\Project1.exe : fatal error LNK1120: 10 externos sin resolver
+﻿  Project1.vcxproj -> C:\Users\Lichi\Documents\Graficos 1\TP3\PracticaGITgraficos1\Project1\Debug\Project1.exe
+          1 archivo(s) copiado(s).
+          1 archivo(s) copiado(s).
+          1 archivo(s) copiado(s).
+          1 archivo(s) copiado(s).

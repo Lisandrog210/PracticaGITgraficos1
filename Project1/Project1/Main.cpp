@@ -5,7 +5,7 @@
 int main(int argc, char **argv){
 
    ALLEGRO_DISPLAY *display = NULL;
-   ALLEGRO_BITMAP  *image   = NULL;
+   ALLEGRO_BITMAP  *image, *resizeImage   = NULL;
 
    if(!al_init()) {
       al_show_native_message_box(display, "Error", "Error", "Failed to initialize allegro!", 
@@ -27,7 +27,12 @@ int main(int argc, char **argv){
       return 0;
    }
 
-   image = al_load_bitmap("image.jpg");
+   image = al_load_bitmap("imagen.jpg");
+   resizeImage = al_create_bitmap(50, 50);
+   
+   al_stretch_blit(image, resizeImage, 0, 0, image->w, image->h, 0, 0, resizeImage->w, resizeImage->h);
+   al_destroy_bitmap(image);
+
 
    if(!image) {
       al_show_native_message_box(display, "Error", "Error", "Failed to load image!", 
@@ -36,8 +41,8 @@ int main(int argc, char **argv){
       return 0;
    }
 
-   al_draw_bitmap(image,200,200,0);
-
+   al_draw_bitmap(image,50,50,0);
+   
    al_flip_display();
    al_rest(2);
 
