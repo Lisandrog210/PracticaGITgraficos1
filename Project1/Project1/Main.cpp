@@ -1,3 +1,6 @@
+using namespace std;
+#include <iostream>
+
 #include "allegro5/allegro.h"
 #include "allegro5/allegro_image.h"
 #include "allegro5/allegro_native_dialog.h"
@@ -30,8 +33,8 @@ int main(int argc, char **argv){
    image = al_load_bitmap("imagen.jpg");
    resizeImage = al_create_bitmap(50, 50);
    
-   al_stretch_blit(image, resizeImage, 0, 0, image->w, image->h, 0, 0, resizeImage->w, resizeImage->h);
-   al_destroy_bitmap(image);
+   //stretch_blit(image, resizeImage, 0, 0, image->w, image->h, 0, 0, resizeImage->w, resizeImage->h);
+   //al_destroy_bitmap(image);
 
 
    if(!image) {
@@ -45,7 +48,7 @@ int main(int argc, char **argv){
    
    al_flip_display();
    al_rest(2);
-
+   cin.get();
    al_destroy_display(display);
    al_destroy_bitmap(image);
 

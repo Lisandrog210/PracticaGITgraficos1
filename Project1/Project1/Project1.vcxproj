@@ -121,6 +121,7 @@ copy "$(SolutionDir)allegro\bin\allegro_image-debug-5.1.dll" "$(OutDir)"
     </Link>
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)Assets\imagen.jpg" "$(OutDir)"
+copy "$(SolutionDir)Assets\imagen.jpg" "$(ProjectDir)"
 copy "$(SolutionDir)allegro\bin\allegro_dialog-5.1.dll" "$(OutDir)"
 copy "$(SolutionDir)allegro\bin\allegro-5.1.dll" "$(OutDir)"
 copy "$(SolutionDir)allegro\bin\allegro_image-5.1.dll" "$(OutDir)"
